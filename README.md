@@ -74,3 +74,25 @@ and then focus on the object:
 	v4l2-ctl -d /dev/v4l-subdev1 -c focus_absolute=447
 	v4l2-ctl -d /dev/v4l-subdev1 -c focus_absolute=480
 	v4l2-ctl -d /dev/v4l-subdev1 -c focus_absolute=511	
+
+## Live capturing video and tuning manually using gstreamer
+
+**Rock5 - Wayland**
+
+* 1920x1080 Display monitor
+  
+		gst-launch-1.0 v4l2src device=/dev/video11 io-mode=dmabuf  do-timestamp=true ! video/x-raw,format=NV12,width=4608,height=2592,framerate=14/1 ! waylandsink render-rectangle='<0,0,1920,1080>' sync=false
+
+* 3840x2160 Display monitor
+
+		gst-launch-1.0 v4l2src device=/dev/video11 io-mode=dmabuf  do-timestamp=true ! video/x-raw,format=NV12,width=4608,height=2592,framerate=14/1 ! waylandsink render-rectangle='<0,0,3840,2160>' sync=false
+
+**Rock3 - Wayland**
+
+* 1920x1080 Display monitor
+  
+		gst-launch-1.0 v4l2src device=/dev/video11 io-mode=dmabuf  do-timestamp=true ! video/x-raw,format=NV12,width=4096,height=2592,framerate=14/1 ! waylandsink render-rectangle='<0,0,1920,1080>' sync=false
+
+* 3840x2160 Display monitor
+
+		gst-launch-1.0 v4l2src device=/dev/video11 io-mode=dmabuf  do-timestamp=true ! video/x-raw,format=NV12,width=4096,height=2592,framerate=14/1 ! waylandsink render-rectangle='<0,0,3840,2160>' sync=false
