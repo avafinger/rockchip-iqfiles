@@ -6,11 +6,13 @@ Basic iqfiles for some rpi cameras on Rockchip
 These iqfiles are considered experimental, and in order to be useful you need to match AIQ server version / Kernel Version / ISP version or the 3A server will crash.
 If you are a photographer or want to obtain better images, you can use the MANUALFOCUS version, where you set the exposure, analog gain, digital gain, and absolute focus to capture higher quality images.
 
-| Family Board | File | Auto Focus | Kernel version | AIQ version | ISP version | Quality max ***** | Credits |
-| :-----------------: | :-----------: | :------------ | :-----------: | :------------: | :--------------------: | :------------: | :-----------: |
-| Rock 3 / Zero 3 | imx708_uhq_default_4096x2592.json_AUTOFOCUS | Auto | 5.10.160 | v5.0x1.2-rc2 | 2.2.1 | ** | Me, Myself and I |
-| Rock 3 / Zero 3 | imx708_uhq_default_4096x2592.json_MANUALFOCUS | Manual | 5.10.160 | v5.0x1.2-rc2 | 2.2.1 | *** | Me, Myself and I |
-| Rock 5 | imx708_uhq_default_4608x2592.json | Auto | 6.1.43 | v6.0x6.1 | 2.4.0 | **** | Radxa |
+| Family Board | Camera module | Frame size | File | Auto Focus | Kernel version | AIQ version | ISP version | Quality max ***** | Credits |
+| :-----------------: | :-----------------: | :-----------------: | :-----------: | :------------ | :-----------: | :------------: | :--------------------: | :------------: | :-----------: |
+| Rock 3 / Zero 3 | IMX708 | 4096x2592 | imx708_uhq_default_4096x2592.json_AUTOFOCUS | Auto | 5.10.160 | v5.0x1.2-rc2 | 2.2.1 | ** | Me, Myself and I |
+| Rock 3 / Zero 3 | IMX708 | 4096x2592 |   imx708_uhq_default_4096x2592.json_MANUALFOCUS | Manual | 5.10.160 | v5.0x1.2-rc2 | 2.2.1 | *** | Me, Myself and I |
+| Rock 5 | IMX708 | 4608x2592 | imx708_uhq_default_4608x2592.json | Auto | 6.1.43 | v6.0x6.1 | 2.4.0 | **** | Radxa |
+| Rock 5 | IMX290 | 1920x1080 | imx290_imx290_default.json | no | 6.1.43 | v6.0x6.1 | 2.4.0 | *** | Me, Myself and I |
+
 
 
 
