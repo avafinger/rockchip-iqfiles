@@ -50,7 +50,7 @@ In my tests here, autofocus is slow due to errors thrown by the algorithm with h
 
 **Available controls are:**
 
-	focus_absolute -> [0, 1023] where [close, far]
+	focus_absolute -> [0, 1023] where [far, close]
 
 Example:
 	
